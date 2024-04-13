@@ -7,6 +7,18 @@ aside {
   display: flex;
   flex-direction: column;
 }
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 0px 20px;
+}
+.sidebarHeader button {
+  all: unset;
+  height: 36px;
+}
+.addNewBtn{
+  border: ;
+}
 .searchBox {
   background-color: rgb(255, 255, 255);
   height: 36px;
@@ -14,7 +26,7 @@ aside {
   display: flex;
   align-items: center;
   padding: 0 10px 0 10px;
-  margin: 10px 20px 0px 20px;
+  
 }
 
 .searchBox button {
@@ -34,16 +46,77 @@ aside {
 
 .hrLine {
   margin-top: 10px;
-  border: .2px solid rgb(212, 212, 212);
+  border: 0.2px solid rgb(212, 212, 212);
   align-self: stretch;
   width: 100%;
 }
 
-.userList{
-  border: .2px solid rgb(182, 182, 182);
+.userList {
+  border: 0.2px solid rgb(182, 182, 182);
   flex-grow: 1;
+  overflow: auto;
+}
+
+.userList li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(202, 199, 199);
+}
+.userList li img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.userList li h1 {
+  font-size: 20px;
+  color: rgb(52, 53, 52);
+}
+.userList li p {
+  font-size: 14px;
+  color: rgb(162, 166, 162);
+  margin-top: 5px;
 }
 
 /* *{
   border: 1px solid red;
 } */
+
+.userPlaceholder {
+  animation: blink 1s linear infinite;
+}
+
+.placeholderImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: grey;
+  margin-right: 10px;
+}
+.placeholderText {
+  /* animation: blink 1s linear infinite; */
+}
+.placeholderH1 {
+  width: 100px;
+  height: 10px;
+  background-color: grey;
+  border-radius: 2px;
+}
+.placeholderP {
+  width: 80px;
+  height: 10px;
+  background-color: grey;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
