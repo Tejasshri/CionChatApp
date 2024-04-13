@@ -6,5 +6,7 @@ const menuController = require("../controllers/userController");
 
 // get all menu items
 router.get("/", menuController.getAllMenuItems);
+router.post("/add-user", menuController.createUser)
+// router.post("/", menuController.)
 
 module.exports = router;
