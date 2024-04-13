@@ -1,3 +1,4 @@
+import Body from "../../components/Body";
 import Navbar from "../../components/Navbar";
 import Sidebar from '../../components/Sidebar' ;
 
@@ -6,7 +7,7 @@ import Sidebar from '../../components/Sidebar' ;
 export default function ChatApp() {
   return (
     <div>
-        <h1>ChatApp</h1>
+        <Body />
     </div>    
   );
 } ;
