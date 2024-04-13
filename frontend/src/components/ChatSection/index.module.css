@@ -1,0 +1,6 @@
+.chatSection{
+    flex-grow: 1;
+    background: rgb(190, 190, 190);
+    margin: 5px;
+    border-radius: 5px;
+}

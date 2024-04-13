@@ -1,7 +1,13 @@
-import styles from './index.module.css' ;
+import styles from "./index.module.css";
 
-export default function Body(){
-    return <div className={styles.body}>
+import Sidebar from "../Sidebar";
+import ChatSection from "../ChatSection";
 
+export default function Body() {
+  return (
+    <div className={styles.body}>
+      <Sidebar />
+      <ChatSection />
     </div>
+  );
 }
