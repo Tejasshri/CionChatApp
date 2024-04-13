@@ -1,10 +1,11 @@
-import { createContext } from "react"; 
+import { createContext } from "react";
 
-const  ReactContext = createContext({
-    count: 1, 
-    updateCount: () => {
-        this.count = this.count+1
-    }
-})
+const ReactContext = createContext({
+  count: 1,
+  updateCount: () => {
+    this.count = this.count + 1;
+  },
+  uses: {},
+});
 
-export default ReactContext ;
+export default ReactContext;

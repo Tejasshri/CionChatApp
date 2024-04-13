@@ -19,7 +19,7 @@ export default function Sidebar() {
       <ul className={styles.userList}>
         {
           users.map(each => (
-            <li>
+            <li key={crypto.randomUUID}>
               {each.name}
             </li>
           ))
