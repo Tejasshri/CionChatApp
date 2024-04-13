@@ -1,17 +1,18 @@
 import React from 'react';
+
+// Pages
+import ChatApp from './pages/ChatApp' ;
+
+// Componnets
 import Navbar from './components/Navbar' ;
-import Contacts  from './components/contacts'
-import ChatSection from './components/chatSection'
+import ContactsList  from './components/ContactsList' ;
+import ChatSection from './components/ChatSection';
+
+// Styles in module
 import './App.css'
 
 export default function App() {
   return (
-    <div>
-      <Navbar />
-      <div className='chat-conteact-container'>
-      <Contacts />
-        <ChatSection />
-      </div>
-    </div>
+    <ChatApp />
   );
 } ;
