@@ -1,10 +1,11 @@
 aside {
   width: 30%;
-  background: rgb(209, 209, 209);
+  background: rgb(233, 233, 233);
   border-radius: 5px;
   margin: 5px;
   max-width: 300px;
-  /* padding: 10px 20px 20px 20px; */
+  display: flex;
+  flex-direction: column;
 }
 .searchBox {
   background-color: rgb(255, 255, 255);
@@ -28,10 +29,19 @@ aside {
   flex-grow: 1;
   border-radius: 4px;
   outline: none;
+  width: 100%;
 }
 
 .hrLine {
   margin-top: 10px;
+  border: .2px solid rgb(212, 212, 212);
+  align-self: stretch;
+  width: 100%;
+}
+
+.userList{
+  border: .2px solid rgb(182, 182, 182);
+  flex-grow: 1;
 }
 
 /* *{

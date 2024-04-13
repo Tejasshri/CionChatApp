@@ -6,6 +6,7 @@ const Navbar = () => {
       <img
         src="https://th.bing.com/th/id/OIP.FwzUjj786A_2fBu9UUS39gAAAA?rs=1&pid="
         alt=""
+        draggable="false"
       />
       <ul>
         <li></li>
