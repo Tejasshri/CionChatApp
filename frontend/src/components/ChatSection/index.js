@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import styles from "./index.module.css";
 
 const ChatSection = () => {
   return (
-    <div>ChatSection</div>
+    <div className={styles.chatSection}></div>
   )
 }
 
-export default ChatSection
+export default ChatSection ;
