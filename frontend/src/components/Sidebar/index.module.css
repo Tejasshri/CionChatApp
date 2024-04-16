@@ -1,3 +1,6 @@
+* {
+  /* border: 1px solid red; */
+}
 aside {
   width: 30%;
   background: rgb(233, 233, 233);
@@ -6,7 +9,6 @@ aside {
   display: flex;
   flex-direction: column;
   height: ;
-  
 }
 .sidebarHeader {
   display: flex;
@@ -14,11 +16,17 @@ aside {
   padding: 10px 20px 0px 20px;
 }
 .sidebarHeader button {
-  all: unset;
   height: 36px;
+  background-color: white;
+  border-radius: 0.3rem;
+  width: 1.41rem;
+  height: 1.57rem;
 }
 .addNewBtn {
-  border: ;
+  font-size: 1rem;
+  margin-left: auto;
+  cursor: pointer;
+  border: 0;
 }
 .searchBox {
   background-color: rgb(255, 255, 255);
@@ -27,6 +35,7 @@ aside {
   display: flex;
   align-items: center;
   padding: 0 10px 0 10px;
+  height: 1.57rem;
 }
 
 .searchBox button {
@@ -79,10 +88,6 @@ aside {
   color: rgb(162, 166, 162);
   margin-top: 5px;
 }
-
-/* *{
-  border: 1px solid red;
-} */
 
 .userPlaceholder {
   animation: blink 1s linear infinite;
