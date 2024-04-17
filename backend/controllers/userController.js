@@ -1,4 +1,10 @@
 const Menu = require("../models/userData");
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+
+
 
 const getAllMenuItems = async (req, res) => {
   try {
@@ -12,10 +18,14 @@ const getAllMenuItems = async (req, res) => {
   }
 };
 
+
+
 const createUser = async (req, res) => {
   const { name, phonenumber, area, coach, imageUrl } = req.body;
   try {
-    const getUserDetails = Menu.findOne({ phonenumber: phonenumber });
+
+    const getUserDetails = await Menu.findOne({ phonenumber: phonenumber });
+    console.log(getUserDetails);
     if (getUserDetails){
       return res.status(400).json({ message: "User already exists" });
     }
@@ -30,9 +40,17 @@ const createUser = async (req, res) => {
 };
 
 
-// setTimeout(create, 10000)
+
+const webHooks = (req,res)=>{
+  const {sender , message } = req.body;
+   console.log(`Received message from ${sender}: ${message}`);
+   const reply = `Thanks for your message, ${sender}!`;
+   console.log(`Sending reply: ${reply}`);
+   res.status(200).send('Message received successfully.');
+
+}
 
 module.exports = {
   getAllMenuItems,
-  createUser
+  createUser,webHooks
 };

@@ -1,6 +1,5 @@
 import { MdSearch } from "react-icons/md";
 import { v4 } from "uuid";
-
 import styles from "./index.module.css";
 import { useContext, useEffect, useState } from "react";
 import ReactContext from "../../context/ReactContext";
@@ -20,12 +19,12 @@ export default function Sidebar() {
           setUsers(data);
         }
       } catch (error) {
-        console.log(error.message, "Somthing went wrong");
+        console.log(error.message, "Something went wrong");
       } finally {
         setIsLoading(false);
       }
     })();
-  }, []);
+  },[]);
 
   return (
     <aside>
@@ -62,7 +61,7 @@ export default function Sidebar() {
 }
 
 function LoadingView() {
-  let n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  let n = [1,2,3,4,5,6,7,8,9,10,11,12];
   return (
     <>
       {n.map((each) => (
