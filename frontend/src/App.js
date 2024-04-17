@@ -16,9 +16,6 @@ import "./App.css";
 
 export default function App() {
   const [users, setUsers] = useState([]);
-
-  
-
   return (
     <ReactContext.Provider value={{ users, setUsers }}>
       <ChatApp />
