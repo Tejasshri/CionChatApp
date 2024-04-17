@@ -36,7 +36,7 @@ export default function Sidebar() {
           <input type="search" />
         </div>
         <button className={styles.addNewBtn}>
-          New
+          +
         </button>
       </div>
       <hr className={styles.hrLine} />

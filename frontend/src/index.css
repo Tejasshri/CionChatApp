@@ -28,3 +28,12 @@ code {
     opacity: 1;
   }
 }
+
+html {
+  font-size: 4.4vw;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 2.7vw;
+  }
+}
